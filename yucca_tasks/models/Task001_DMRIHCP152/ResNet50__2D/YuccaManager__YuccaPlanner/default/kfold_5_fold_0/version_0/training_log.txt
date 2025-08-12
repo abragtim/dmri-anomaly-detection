@@ -1,0 +1,4 @@
+Starting model training
+log file:            /Users/timur/Documents/dmri_anomaly_detection_local/yucca_tasks/models/Task001_DMRIHCP152/ResNet50__2D/YuccaManager__YuccaPlanner/default/kfold_5_fold_0/version_0/training_log.txt
+Reusing already computed split file which was split using the kfold method and parameter 5.
+Patch size will be infered from hardware constraints

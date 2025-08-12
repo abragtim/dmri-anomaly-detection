@@ -1,0 +1,159 @@
+WARNING:root:Reusing already computed split file which was split using the kfold method and parameter 5.
+INFO:root:Patch size will be infered from hardware constraints
+INFO:root:Final batch and patch sizes set to 512 and (128, 96) based on the current constraints.
+Max GPU memory usage: 12GB.
+Estimated GPU memory usage: 2.5. This includes an offset of 2.5GB to allow a margin of error and account for VRAM grabbed by torch and other backend libraries.
+Max patch size: [142, 110]
+Max batch size: 512
+
+INFO:root:Using batch size: 512 and patch size: (128, 96)
+Composing Transforms
+INFO:root:YuccaLightningModule initialized
+INFO:root:Deep Supervision Enabled: False
+INFO:root:Using 4 workers
+INFO:root:Using dataset class: <class 'yucca.modules.data.datasets.YuccaDataset.YuccaTrainDataset'> for train/val and <class 'yucca.modules.data.datasets.YuccaDataset.YuccaTestDataset'> for inference
+Using bfloat16 Automatic Mixed Precision (AMP)
+GPU available: True (mps), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/lightning/pytorch/trainer/connectors/checkpoint_connector.py:190: .fit(ckpt_path="last") is set, but there is no last checkpoint available. No checkpoint will be loaded. HINT: Set `ModelCheckpoint(..., save_last=True)`.
+INFO:root:Setting up data for stage: TrainerFn.FITTING
+INFO:root:Validating on samples: ['/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/100610', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/101006', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/101915', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/105115', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/106319', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/109830', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/110007', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/110411', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/111009', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/120515', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/128026', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/130821', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/132017', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/135730', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/140319', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/150524', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/153025', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/154330', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/159340', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/160123', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/160931', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/167036', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/175540', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/180937', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/182840', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/185038', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/186040', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/191033', '/Volumes/TimurDKI/dmri_anomaly_detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/194140']
+INFO:root:Loading Model: 2D TinyUNet
+INFO:root:
+| module                      | #parameters or shape   | #flops     |
+|:----------------------------|:-----------------------|:-----------|
+| model                       | 7.557K                 | 10.532G    |
+|  in_conv                    |  0.204K                |  1.384G    |
+|   in_conv.conv1             |   48                   |   0.352G   |
+|    in_conv.conv1.conv       |    40                  |    0.226G  |
+|    in_conv.conv1.norm       |    8                   |    0.126G  |
+|   in_conv.conv2             |   0.156K               |   1.032G   |
+|    in_conv.conv2.conv       |    0.148K              |    0.906G  |
+|    in_conv.conv2.norm       |    8                   |    0.126G  |
+|  encoder_conv1              |  0.912K                |  1.485G    |
+|   encoder_conv1.conv1       |   0.312K               |   0.516G   |
+|    encoder_conv1.conv1.conv |    0.296K              |    0.453G  |
+|    encoder_conv1.conv1.norm |    16                  |    62.915M |
+|   encoder_conv1.conv2       |   0.6K                 |   0.969G   |
+|    encoder_conv1.conv2.conv |    0.584K              |    0.906G  |
+|    encoder_conv1.conv2.norm |    16                  |    62.915M |
+|  encoder_conv2              |  3.552K                |  1.422G    |
+|   encoder_conv2.conv1       |   1.2K                 |   0.484G   |
+|    encoder_conv2.conv1.conv |    1.168K              |    0.453G  |
+|    encoder_conv2.conv1.norm |    32                  |    31.457M |
+|   encoder_conv2.conv2       |   2.352K               |   0.937G   |
+|    encoder_conv2.conv2.conv |    2.32K               |    0.906G  |
+|    encoder_conv2.conv2.norm |    32                  |    31.457M |
+|  upsample1                  |  0.52K                 |  0.201G    |
+|   upsample1.weight          |   (16, 8, 2, 2)        |            |
+|   upsample1.bias            |   (8,)                 |            |
+|  decoder_conv1              |  1.776K                |  2.844G    |
+|   decoder_conv1.conv1       |   1.176K               |   1.875G   |
+|    decoder_conv1.conv1.conv |    1.16K               |    1.812G  |
+|    decoder_conv1.conv1.norm |    16                  |    62.915M |
+|   decoder_conv1.conv2       |   0.6K                 |   0.969G   |
+|    decoder_conv1.conv2.conv |    0.584K              |    0.906G  |
+|    decoder_conv1.conv2.norm |    16                  |    62.915M |
+|  upsample2                  |  0.132K                |  0.201G    |
+|   upsample2.weight          |   (8, 4, 2, 2)         |            |
+|   upsample2.bias            |   (4,)                 |            |
+|  decoder_conv2              |  0.456K                |  2.97G     |
+|   decoder_conv2.conv1       |   0.3K                 |   1.938G   |
+|    decoder_conv2.conv1.conv |    0.292K              |    1.812G  |
+|    decoder_conv2.conv1.norm |    8                   |    0.126G  |
+|   decoder_conv2.conv2       |   0.156K               |   1.032G   |
+|    decoder_conv2.conv2.conv |    0.148K              |    0.906G  |
+|    decoder_conv2.conv2.norm |    8                   |    0.126G  |
+|  out_conv                   |  5                     |  25.166M   |
+|   out_conv.weight           |   (1, 4, 1, 1)         |            |
+|   out_conv.bias             |   (1,)                 |            |
+
+  | Name          | Type             | Params | Mode
+-----------------------------------------------------------
+0 | train_metrics | MetricCollection | 0      | train
+1 | val_metrics   | MetricCollection | 0      | train
+2 | model         | TinyUNet         | 7.6 K  | train
+3 | loss_fn_train | DiceCE           | 0      | train
+4 | loss_fn_val   | DiceCE           | 0      | train
+-----------------------------------------------------------
+7.6 K     Trainable params
+0         Non-trainable params
+7.6 K     Total params
+0.030     Total estimated model params size (MB)
+61        Modules in train mode
+0         Modules in eval mode
+/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:420: Consider setting `persistent_workers=True` in 'val_dataloader' to speed up the dataloader worker initialization.
+Traceback (most recent call last):
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/bin/yucca_train", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/yucca/pipeline/run/run_training.py", line 191, in main
+    manager.run_training()
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/yucca/pipeline/managers/YuccaManager.py", line 302, in run_training
+    self.trainer.fit(
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 561, in fit
+    call._call_and_handle_interrupt(
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/lightning/pytorch/trainer/call.py", line 48, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 599, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1012, in _run
+    results = self._run_stage()
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1054, in _run_stage
+    self._run_sanity_check()
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/lightning/pytorch/trainer/trainer.py", line 1083, in _run_sanity_check
+    val_loop.run()
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/lightning/pytorch/loops/utilities.py", line 179, in _decorator
+    return loop_run(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/lightning/pytorch/loops/evaluation_loop.py", line 138, in run
+    batch, batch_idx, dataloader_idx = next(data_fetcher)
+                                       ^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/lightning/pytorch/loops/fetchers.py", line 134, in __next__
+    batch = super().__next__()
+            ^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/lightning/pytorch/loops/fetchers.py", line 61, in __next__
+    batch = next(self.iterator)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/lightning/pytorch/utilities/combined_loader.py", line 341, in __next__
+    out = next(self._iterator)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/lightning/pytorch/utilities/combined_loader.py", line 142, in __next__
+    out = next(self.iterators[0])
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 708, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1480, in _next_data
+    return self._process_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1505, in _process_data
+    data.reraise()
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/torch/_utils.py", line 733, in reraise
+    raise exception
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 349, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/yucca/modules/data/datasets/YuccaDataset.py", line 113, in __getitem__
+    return self._transform(data_dict, metadata)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/yucca/modules/data/datasets/YuccaDataset.py", line 119, in _transform
+    return self.to_torch(data_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/yucca/modules/data/augmentation/transforms/formatting.py", line 69, in __call__
+    self.get_params(data_dict.get(self.label_key))
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/yucca/modules/data/augmentation/transforms/formatting.py", line 41, in get_params
+    if np.issubdtype(label.dtype, (np.floating, float)):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/numpy/_core/numerictypes.py", line 536, in issubdtype
+    arg2 = dtype(arg2).type
+           ^^^^^^^^^^^
+TypeError: Converting `np.inexact` or `np.floating` to a dtype not allowed

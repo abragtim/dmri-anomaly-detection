@@ -1,0 +1,62 @@
+WARNING:root:Reusing already computed split file which was split using the kfold method and parameter 5.
+INFO:root:Patch size will be infered from hardware constraints
+Traceback (most recent call last):
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/bin/yucca_train", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/yucca/pipeline/run/run_training.py", line 191, in main
+    manager.run_training()
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/yucca/pipeline/managers/YuccaManager.py", line 301, in run_training
+    self.initialize(stage="fit")
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/yucca/pipeline/managers/YuccaManager.py", line 212, in initialize
+    input_dims_config = get_input_dims_config(
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/yucca/pipeline/configuration/configure_input_dims.py", line 100, in get_input_dims_config
+    batch_size, patch_size = find_optimal_tensor_dims(
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/yucca/modules/networks/utils/model_memory_estimation.py", line 179, in find_optimal_tensor_dims
+    est = estimate_memory_training(model, inp)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/yucca/modules/networks/utils/model_memory_estimation.py", line 59, in estimate_memory_training
+    _ = model(model_input.to(device)).sum()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/yucca/modules/networks/networks/UNet.py", line 217, in forward
+    x3 = self.encoder_conv3(x3)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/yucca/modules/networks/blocks_and_layers/conv_layers.py", line 163, in forward
+    x = self.conv2(x)
+        ^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/yucca/modules/networks/blocks_and_layers/conv_layers.py", line 81, in forward
+    x = self.conv(x)
+        ^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/torch/nn/modules/conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/torch/nn/modules/conv.py", line 549, in _conv_forward
+    return F.conv2d(
+           ^^^^^^^^^
+KeyboardInterrupt

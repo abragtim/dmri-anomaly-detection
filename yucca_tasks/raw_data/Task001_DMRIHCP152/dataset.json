@@ -1,0 +1,456 @@
+{
+  "name": "Task001_DMRIHCP152",
+  "description": "HCP Diffusion MRI Mean Diffusivity - 152 subjects",
+  "tensorImageSize": "3D",
+  "reference": "Human Connectome Project",
+  "licence": "HCP Open Access Data Use Terms",
+  "release": "1.0",
+  "modality": {
+    "0": "MD"
+  },
+  "labels": {},
+  "tasks": {},
+  "label_hierarchy": {},
+  "numTraining": 142,
+  "numTest": 10,
+  "training": [
+    {
+      "image": "./imagesTr/154330_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/140925_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/100206_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/186040_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/164030_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/108525_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/111009_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/169040_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/191033_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/140420_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/100408_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/172029_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/117021_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/130619_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/161630_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/117930_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/120212_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/100610_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/108121_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/180735_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/150625_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/178950_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/115017_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/106521_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/180937_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/102715_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/187850_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/180432_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/120717_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/171330_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/150524_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/135730_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/129028_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/140117_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/158540_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/150019_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/103010_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/130720_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/123420_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/115320_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/192035_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/170631_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/127630_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/177140_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/130316_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/151021_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/180129_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/107422_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/148032_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/168240_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/122620_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/103111_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/105014_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/175540_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/101006_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/140824_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/182840_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/108323_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/195041_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/162026_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/140319_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/180836_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/137027_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/106319_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/159340_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/103818_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/102008_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/107018_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/189450_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/165840_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/110411_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/103515_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/150928_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/134021_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/180230_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/172130_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/158035_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/166640_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/147030_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/160931_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/153025_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/105923_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/138130_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/160830_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/183034_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/143830_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/104820_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/130417_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/110007_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/132017_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/133019_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/107725_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/192540_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/102109_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/167036_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/102816_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/128026_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/120010_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/148840_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/101107_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/156031_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/106824_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/130821_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/109123_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/175035_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/109830_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/102513_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/110613_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/102311_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/102614_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/173940_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/150726_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/170934_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/105216_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/103414_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/190031_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/108828_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/185038_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/108222_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/100307_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/130114_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/165032_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/118730_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/160123_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/112920_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/194140_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/176037_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/120111_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/118023_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/104416_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/101410_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/101915_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/160729_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/104012_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/182032_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/105115_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/107321_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/119025_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/120515_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/130013_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/101309_000.nii.gz"
+    },
+    {
+      "image": "./imagesTr/105620_000.nii.gz"
+    }
+  ],
+  "test": [
+    "./imagesTs/124220_000.nii.gz",
+    "./imagesTs/180533_000.nii.gz",
+    "./imagesTs/151930_000.nii.gz",
+    "./imagesTs/167440_000.nii.gz",
+    "./imagesTs/130518_000.nii.gz",
+    "./imagesTs/108020_000.nii.gz",
+    "./imagesTs/103212_000.nii.gz",
+    "./imagesTs/106016_000.nii.gz",
+    "./imagesTs/130922_000.nii.gz",
+    "./imagesTs/120414_000.nii.gz"
+  ]
+}

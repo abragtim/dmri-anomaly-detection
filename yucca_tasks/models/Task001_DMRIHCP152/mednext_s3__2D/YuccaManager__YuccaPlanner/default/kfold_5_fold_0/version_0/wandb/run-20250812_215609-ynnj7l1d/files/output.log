@@ -1,0 +1,2 @@
+WARNING:root:Reusing already computed split file which was split using the kfold method and parameter 5.
+INFO:root:Patch size will be infered from hardware constraints
