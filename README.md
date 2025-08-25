@@ -6,7 +6,8 @@
 4. run `python3 convert_to_yucca_format.py --test-set-amount X` (X is the number of test samples, e.g. 10, use --dry-run to test)
 5. setup [environment variables for yucca](https://github.com/Sllambias/yucca/blob/main/yucca/documentation/guides/environment_variables.md), then run `cp .env /Users/timur/anaconda3/envs/diffusion-segmentation/lib/python3.12/site-packages/yucca/.env`
 6. run `yucca_preprocess -t Task001_DMRIHCP152 -pr UnsupervisedPreprocessor` (remove metadata files at the first run, then run again; use --dry-run to test)
-
+7. run `yucca_train -t Task001_DMRIHCP152 -m TinyUNet -d 2D --loss MSE`
+8. run `PYTORCH_ENABLE_MPS_FALLBACK=1 yucca_inference -s Task001_DMRIHCP152 -t Task001_DMRIHCP152 -m TinyUNet -d 2D`
 
 ## Q&A
 

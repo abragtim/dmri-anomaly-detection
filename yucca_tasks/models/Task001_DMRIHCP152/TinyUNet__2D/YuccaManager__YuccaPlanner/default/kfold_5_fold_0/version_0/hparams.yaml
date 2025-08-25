@@ -1,5 +1,5 @@
 config:
-  allow_missing_modalities: false
+  allow_missing_modalities: 'false'
   augmentation_parameters:
     additive_noise_mean: !!python/tuple
     - 0.0
@@ -88,26 +88,12 @@ config:
     skeleton: false
     skip_label: true
   base_experiment: default
-  batch_size: 512
-  ckpt_patch_size: null
-  ckpt_path: null
-  ckpt_plans: null
-  ckpt_seed: null
-  ckpt_version_dir: null
-  ckpt_wandb_id: null
-  continue_from_most_recent: true
-  experiment: default
-  image_extension: nii.gz
-  labels: null
-  manager_name: YuccaManager
-  model_dimensions: 2D
-  model_name: TinyUNet
-  num_classes: 1
-  num_modalities: 1
-  patch_based_training: true
-  patch_size: *id004
-  planner_name: YuccaPlanner
-  plans:
+  batch_size: 1
+  ckpt_patch_size: !!python/tuple
+  - 128
+  - 96
+  ckpt_path: /Users/timur/Documents/GitHub/dmri-anomaly-detection/yucca_tasks/models/Task001_DMRIHCP152/TinyUNet__2D/YuccaManager__YuccaPlanner/default/kfold_5_fold_0/version_0/checkpoints/best.ckpt
+  ckpt_plans:
     allow_missing_modalities: false
     crop_to_nonzero: true
     dataset_properties:
@@ -195,24 +181,127 @@ config:
     - 0
     - 1
     - 2
-  plans_path: /Users/timur/Documents/dmri_anomaly_detection_local/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/YuccaPlanner_plans.json
+  ckpt_seed: 825101523
+  ckpt_version_dir: /Users/timur/Documents/GitHub/dmri-anomaly-detection/yucca_tasks/models/Task001_DMRIHCP152/TinyUNet__2D/YuccaManager__YuccaPlanner/default/kfold_5_fold_0/version_0
+  ckpt_wandb_id: 0y6xazk0
+  continue_from_most_recent: true
+  experiment: default
+  image_extension: nii.gz
+  labels: null
+  manager_name: YuccaManager
+  model_dimensions: 2D
+  model_name: TinyUNet
+  num_classes: 1
+  num_modalities: 1
+  patch_based_training: true
+  patch_size: *id004
+  planner_name: YuccaPlanner
+  plans:
+    allow_missing_modalities: 'false'
+    crop_to_nonzero: 'true'
+    dataset_properties:
+      background_pixel_values:
+      - '0'
+      classes: []
+      data_dimensions: '3'
+      image_extension: nii.gz
+      intensities:
+      - max: '0.1174204871058464'
+        maxmin: '3.3843702840208323e-10'
+        mean: '0.0006542730843648314'
+        min: '3.322259134463934e-10'
+        percentile_00_5: '3.3225121445767945e-10'
+        percentile_99_5: '0.0021426064142025993'
+        std: '0.0002813520550262183'
+      label_hierarchy: {}
+      labels: 'null'
+      modalities:
+        '0': MD
+      original_max_size:
+      - '145'
+      - '174'
+      - '145'
+      original_max_spacing:
+      - '1.25'
+      - '1.25'
+      - '1.25'
+      original_median_size:
+      - '145.0'
+      - '174.0'
+      - '145.0'
+      original_median_spacing:
+      - '1.25'
+      - '1.25'
+      - '1.25'
+      original_min_size:
+      - '145'
+      - '174'
+      - '145'
+      original_min_spacing:
+      - '1.25'
+      - '1.25'
+      - '1.25'
+      regions: 'null'
+      tasks: {}
+    keep_aspect_ratio_when_using_target_size: 'true'
+    max_cc_size: '0'
+    max_n_cc: '0'
+    mean_cc_size: '0'
+    mean_n_cc: '0'
+    min_cc_size: '0'
+    min_n_cc: '0'
+    new_max_size:
+    - '122'
+    - '158'
+    - '118'
+    new_mean_size:
+    - '110'
+    - '142'
+    - '110'
+    new_min_size:
+    - '100'
+    - '130'
+    - '103'
+    normalization_scheme:
+    - standardize
+    num_classes: '0'
+    num_modalities: '1'
+    plans_name: YuccaPlanner
+    preprocessor: UnsupervisedPreprocessor
+    suggested_dimensionality: 3D
+    target_coordinate_system: RAS
+    target_size: 'null'
+    target_spacing:
+    - '1.25'
+    - '1.25'
+    - '1.25'
+    task_type: self-supervised
+    transpose_backward:
+    - '0'
+    - '1'
+    - '2'
+    transpose_forward:
+    - '0'
+    - '1'
+    - '2'
+  plans_path: /Users/timur/Documents/GitHub/dmri-anomaly-detection/yucca_tasks/models/Task001_DMRIHCP152/TinyUNet__2D/YuccaManager__YuccaPlanner/default/kfold_5_fold_0/version_0/hparams.yaml
   regions: null
-  save_dir: /Users/timur/Documents/dmri_anomaly_detection_local/yucca_tasks/models/Task001_DMRIHCP152/TinyUNet__2D/YuccaManager__YuccaPlanner/default/kfold_5_fold_0
-  seed: 812191445
+  save_dir: /Users/timur/Documents/GitHub/dmri-anomaly-detection/yucca_tasks/models/Task001_DMRIHCP152/TinyUNet__2D/YuccaManager__YuccaPlanner/default/kfold_5_fold_0
+  seed: 825101523
   split_idx: 0
-  split_method: kfold
-  split_param: 5
+  split_method: null
+  split_param: null
   task: Task001_DMRIHCP152
   task_type: self-supervised
-  train_data_dir: /Users/timur/Documents/dmri_anomaly_detection_local/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner
+  train_data_dir: /Users/timur/Documents/GitHub/dmri-anomaly-detection/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner
   use_label_regions: false
   version: 0
-  version_dir: /Users/timur/Documents/dmri_anomaly_detection_local/yucca_tasks/models/Task001_DMRIHCP152/TinyUNet__2D/YuccaManager__YuccaPlanner/default/kfold_5_fold_0/version_0
-  wandb_id: zsv4oln4
-crop_to_nonzero: true
+  version_dir: /Users/timur/Documents/GitHub/dmri-anomaly-detection/yucca_tasks/models/Task001_DMRIHCP152/TinyUNet__2D/YuccaManager__YuccaPlanner/default/kfold_5_fold_0/version_0
+  wandb_id: None
+crop_to_nonzero: 'true'
 deep_supervision: false
 disable_inference_preprocessing: false
-hparams_path: /Users/timur/Documents/dmri_anomaly_detection_local/yucca_tasks/preprocessed/Task001_DMRIHCP152/YuccaPlanner/YuccaPlanner_plans.json
+hparams_path: /Users/timur/Documents/GitHub/dmri-anomaly-detection/yucca_tasks/models/Task001_DMRIHCP152/TinyUNet__2D/YuccaManager__YuccaPlanner/default/kfold_5_fold_0/version_0/hparams.yaml
 log_image_every_n_epochs: null
 loss_kwargs:
   soft_dice_kwargs:
